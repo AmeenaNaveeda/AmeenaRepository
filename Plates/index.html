@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<body>
+  <nav class="search-bar">
+    <div class="plates">Plates</div>
+    <div class="search-container">
+      <form action="">
+        <input class="search-box" type="text" placeholder="Search.." name="search">
+        <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+  <div class="head-container">
+    <div class="slides">
+      <img class="my-slides" alt="slide-image" src="images/banana.jpg">
+      <img class="my-slides" alt="slide-image" src="images/berries.jpg">
+      <img class="my-slides" alt="slide-image" src="images/bread.jpg">
+      <img class="my-slides" alt="slide-image" src="images/doughnut.jpg">
+      <img class="my-slides" alt="slide-image" src="images/pinapple.jpg">
+      <img class="my-slides" alt="slide-image" src="images/spoons.jpg">
+    </div>
+    <div class="profile-buttons">
+      <button class="login-button">Log in</button>
+      <button class="register-button">Register</button>
+    </div>
+  </div>
+  <div class="restraunt-list">
+    <h2>Trending this season</h2>
+    <div>
+      <div class="restraunt">
+        <img class="restraunt-image" alt="restraunt-image" src="images/restraunt1.jpg">
+        <h2>Restraunt1</h2>
+      </div>
+      <div class="restraunt">
+        <img class="restraunt-image" alt="restraunt-image" src="images/restraunt2.jpg">
+        <h2>Restraunt2</h2>
+      </div>
+      <div class="restraunt">
+        <img class="restraunt-image" alt="restraunt-image" src="images/restraunt3.jpg">
+        <h2>Restraunt3</h2>
+      </div>
+      <div class="restraunt">
+        <img class="restraunt-image" alt="restraunt-image" src="images/restraunt4.jpg">
+        <h2>Restraunt4</h2>
+      </div>
+      <div class="restraunt">
+        <img class="restraunt-image" alt="restraunt-image" src="images/restraunt5.jpg">
+        <h2>Restraunt5</h2>
+      </div>
+    </div>
+    <div><button class="more-button">more</button></div>
+  </div>
+  <div class="dish-list">
+    <h2>Dish in demand</h2>
+    <div>
+      <div class="dish">
+        <img class="dish-image" alt="dish-image" src="images/restraunt1.jpg">
+        <h2>dish1</h2>
+      </div>
+      <div class="dish">
+        <img class="dish-image" alt="dish-image" src="images/restraunt2.jpg">
+        <h2>dish2</h2>
+      </div>
+      <div class="dish">
+        <img class="dish-image" alt="dish-image" src="images/restraunt3.jpg">
+        <h2>dish3</h2>
+      </div>
+      <div class="dish">
+        <img class="dish-image" alt="dish-image" src="images/restraunt4.jpg">
+        <h2>dish4</h2>
+      </div>
+      <div class="dish">
+        <img class="dish-image" alt="dish-image" src="images/restraunt5.jpg">
+        <h2>dish5</h2>
+      </div>
+    </div>
+    <div><button class="more-button">more</button></div>
+  </div>
+  <div class="footer">
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+  </div>
+</body>
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("my-slides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+</script>
+
+</html>

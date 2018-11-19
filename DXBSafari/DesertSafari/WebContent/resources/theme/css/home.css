@@ -1,0 +1,24 @@
+h2{
+  font: 200 40px/0.8 'Great Vibes', Helvetica, sans-serif !important;
+  color: #404040;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+  padding-top:15px;
+}
+
+p{
+  color: #868686;
+}
+
+/*footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  overflow:hidden;
+}
+
+nav{
+  top: 0;
+  position: absolute;
+  width: 100%
+  overflow:hidden;
+}*/
